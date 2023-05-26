@@ -1,0 +1,3 @@
+[submodule "local-detection-dataset"]
+	path = local-detection-dataset
+	url = https://github.com/Kejia928/local-detection-dataset
