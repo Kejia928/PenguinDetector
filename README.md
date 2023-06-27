@@ -3,7 +3,7 @@
 This penguin detector model is implemented based on the YOLOv5 architecture developed by Ultralytics and rooted in the classic real-time object detection algorithm YOLO.
 
 ## Usage
-```
+```bash
 git clone https://github.com/Kejia928/PenguinDetector.git
 ```
 
@@ -11,7 +11,7 @@ git clone https://github.com/Kejia928/PenguinDetector.git
 The following shows the Python environment requirements for this detector. This is shown in the `yolov5` folder `requirements.txt`.
 
 The requirement can be directly installed by using pip:
-```
+```bash
 cd yolov5
 pip install -r requirements.txt
 ```
@@ -70,7 +70,7 @@ seaborn>=0.11.0
 
 ## Detect
 To detect single image (fill the image path in the below commend line):
-```
+```bash
 python yolov5/detect.py --weights model/yolov5s_best.pt --source 'image path' --save-txt
 ```
 
@@ -82,23 +82,23 @@ run_yolo_detector("video path", "model/yolov5s_best.pt")
 ```
 
 Then directly run the `run.py`:
-```
+```bash
 python run.py
 ```
 
 ## Training
 Clone the dataset:
-```
+```bash
 git clone https://github.com/Kejia928/local-detection-dataset.git
 ```
 
 Run the yolov5 `train.py`:
-```
+```bash
 python yolov5/train.py --data local-detection-dataset/data.yaml --weights yolov5s.pt --cfg yolov5/models/yolov5s.yaml --save-period=200 --img 640 --epochs 1000
 ```
 
 ## Test
 Run the yolov5 `val.py`:
-```
+```bash
 python yolov5/val.py --weights model/yolo/yolov5n_best.pt --data local-detection-dataset/data.yaml --img 640
 ```
