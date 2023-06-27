@@ -18,4 +18,4 @@ def run_yolo_detector(video_path, model_path):
 
 
 if __name__ == '__main__':
-    run_yolo_detector("video/20170929_F_5_3.mp4", "model/yolov5s_best.pt")
+    run_yolo_detector("video/SP_N5_20170808_2_4.mp4", "model/yolov5s_best.pt")
