@@ -7,7 +7,7 @@ This penguin detector model is implemented based on the YOLOv5 architecture deve
 git clone https://github.com/Kejia928/PenguinDetector.git
 ```
 
-## Set up enviornment
+## Set up environment
 The following shows the Python environment requirements for this detector. This is shown in the `yolov5` folder `requirements.txt`.
 
 The requirement can be directly installed by using pip:
@@ -69,14 +69,14 @@ seaborn>=0.11.0
 ```
 
 ## Detect
-To detect single image (fill the image path in the below commend line):
+To detect single image (fill the image path in the below command line):
 ```bash
 python yolov5/detect.py --weights model/yolov5s_best.pt --source 'image path' --save-txt
 ```
 
 To detect the video:
 
-In the `run.py`  (fill the video path in the funtion):
+In the `run.py`  (fill the video path in the function):
 ```
 run_yolo_detector("video path", "model/yolov5s_best.pt")
 ```
