@@ -69,21 +69,21 @@ seaborn>=0.11.0
 ```
 
 ## Detect
-To detect single image (fill the image path in the below command line):
+To detect on a single image, fill the 'image path' in the below command line:
 ```bash
 python yolov5/detect.py --weights model/yolov5s_best.pt --source 'image path' --save-txt
 ```
 
-To detect the video:
+To detect on a video:
 
-In the `run.py`  (fill the video path in the function):
-```
-run_yolo_detector("video path", "model/yolov5s_best.pt")
-```
-
-Then directly run the `run.py`:
+Directly run the `run.py`, specifying path to video file after the `--video` argument:
 ```bash
-python run.py
+python run.py --video video/SP_N5_20170808_2_4.mp4
+```
+
+To specify a custom YOLO model file for detecting on a video, include the `--model` argument (default best model is used below):
+```bash
+python run.py --video video/SP_N5_20170808_2_4.mp4 --model model/yolov5s_best.pt
 ```
 
 ## Training
